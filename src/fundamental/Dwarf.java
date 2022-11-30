@@ -38,6 +38,7 @@ public class Dwarf implements IObserver {
         if (toyPreparedForSanta == null) {
             throw new IllegalArgumentException("This item cannot be null!");
         }
+        Santa.getInstance().addAToy(toyPreparedForSanta);
     }
 
     @Override
