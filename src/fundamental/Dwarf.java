@@ -52,7 +52,6 @@ public class Dwarf implements IObserver {
     @Override
     public void removeWishBoard() {
         observedWishBoard = null;
-
     }
 
 
