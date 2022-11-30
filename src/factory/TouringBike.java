@@ -1,6 +1,6 @@
 package factory;
 
-public class TouringBike extends Toy{
+public class TouringBike extends Toy {
 
     @Override
     public void prepare() {

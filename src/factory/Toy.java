@@ -4,15 +4,15 @@ public abstract class Toy {
 
     private String name;
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public void setName(String name){
-        this.name=name;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public abstract void  prepare();
+    public abstract void prepare();
 
     @Override
     public String toString() {
