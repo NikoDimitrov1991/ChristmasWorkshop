@@ -37,15 +37,15 @@ public class Santa {
         }
         System.out.println("The number of toys in Santa's warehouse is: " + toysWarehouse.size());
     }
-    public void requestAToy(String wantedToy, WishBoard magicBoard) {
+    public void requestAToy(String wantedToy, WishBoard wishBoard) {
         ICommand command = null;
         switch (wantedToy.toLowerCase()) {
-            case "barbie doll" -> command = new GiveMeABarbieDoll(magicBoard);
-            case "wooden doll" -> command = new GiveMeAWoodenDoll(magicBoard);
-            case "mountain bike" -> command = new GiveMeAMountainBike(magicBoard);
-            case "road bike" -> command = new GiveMeARoadBike(magicBoard);
-            case "folding bike" -> command = new GiveMeAFoldingBike(magicBoard);
-            case "touring bike" -> command = new GiveMeATouringBike(magicBoard);
+            case "barbie doll" -> command = new GiveMeABarbieDoll(wishBoard);
+            case "wooden doll" -> command = new GiveMeAWoodenDoll(wishBoard);
+            case "mountain bike" -> command = new GiveMeAMountainBike(wishBoard);
+            case "road bike" -> command = new GiveMeARoadBike(wishBoard);
+            case "folding bike" -> command = new GiveMeAFoldingBike(wishBoard);
+            case "touring bike" -> command = new GiveMeATouringBike(wishBoard);
             default -> System.out.println("Santa cannot ask for such toy!");
         }
         if(command == null) {
