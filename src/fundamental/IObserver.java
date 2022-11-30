@@ -4,7 +4,7 @@ public interface IObserver {
 
     void update();
 
-    void setMagicBoard(IObservable topic);
+    void setWishBoard(IObservable topic);
 
-    void removeMagicBoard();
+    void removeWishBoard();
 }
