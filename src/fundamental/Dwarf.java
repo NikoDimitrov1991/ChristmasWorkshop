@@ -35,8 +35,8 @@ public class Dwarf implements IObserver {
             default -> System.out.println("Not an existing type of a toy!");
         }
 
-        if (toyPreparedForSanta == null) {
-            throw new IllegalArgumentException("This item cannot be null!");
+        if(toyPreparedForSanta == null) {
+            throw new IllegalArgumentException("The item cannot be null!");
         }
         Santa.getInstance().addAToy(toyPreparedForSanta);
     }
