@@ -41,6 +41,7 @@ public class Dwarf implements IObserver {
         Santa.getInstance().addAToy(toyPreparedForSanta);
     }
 
+
     @Override
     public void setWishBoard(IObservable wishBoard) {
         if (wishBoard == null) {
