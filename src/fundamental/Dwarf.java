@@ -26,7 +26,7 @@ public class Dwarf implements IObserver {
         String writtenToy = observedWishBoard.getToy();
 
         switch (writtenToy) {
-            case "barbie doll" -> toyPreparedForSanta = dollFactory.produceAToy("barbie boll");
+            case "barbie doll" -> toyPreparedForSanta = dollFactory.produceAToy("barbie doll");
             case "wooden doll" -> toyPreparedForSanta = dollFactory.produceAToy("wooden doll");
             case "folding bike" -> toyPreparedForSanta = bikeFactory.produceAToy("folding bike");
             case "mountain bike" -> toyPreparedForSanta = bikeFactory.produceAToy("mountain bike");
