@@ -15,7 +15,7 @@ public class WishBoard implements IObservable {
     public void subscribe(IObserver observer) {
         if (observer != null) {
             dwarfsInService.add(observer);
-            observer.setMagicBoard(this);
+            observer.setWishBoard(this);
         } else {
             throw new IllegalArgumentException("The dwarf cannot be null!");
         }
@@ -25,7 +25,7 @@ public class WishBoard implements IObservable {
     public void unsubscribe(IObserver observer) {
         if (observer != null) {
             dwarfsInService.remove(observer);
-            observer.removeMagicBoard();
+            observer.removeWishBoard();
         } else {
             throw new IllegalArgumentException("The dwarf cannot be null!");
         }
